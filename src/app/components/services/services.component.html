@@ -14,6 +14,23 @@
   </div>
   <!-- grid container -->
   <div class="container mx-auto mt-8 xl:-mt-[144px]">
-
+    <!-- grid -->
+    <div class="grid xl:grid-cols-4 gap-5 px-8 xl:px-0">
+      <!-- item -->
+      @for (item of itemArray; track $index) {
+        <div
+          class="services__item bg-white p-[30px] rounded-[10px] shadow-custom2 min-h-[288px] flex flex-col items-center text-center">
+          <!-- item icon-->
+          <div class="mb-[15px]">
+            <img [src]="item.url" alt="">
+          </div>
+          <!-- item title-->
+          <h3 class="h3 mb-[10px]">{{ item.title |titlecase }}</h3>
+          <!-- item description-->
+          <p class="font-light leading-normal max-w-[300px]">Lorem ipsum dolor sit amet, consectetur adipisicing amet
+            elit.</p>
+        </div>
+      }
+    </div>
   </div>
 </section>
