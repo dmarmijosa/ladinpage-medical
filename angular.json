@@ -25,9 +25,14 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/remixicon/fonts/remixicon.css",
+              "node_modules/swiper/swiper-bundle.min.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/scrollreveal/dist/scrollreveal.min.js",
+              "node_modules/swiper/swiper-bundle.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -91,5 +96,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "f9525781-71c7-4aeb-8235-b87da55742c8"
   }
 }

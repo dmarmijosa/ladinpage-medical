@@ -1,0 +1,27 @@
+<nav [ngClass]="!toogleBtn?'-left-[300px]':'left-0'"
+     class="mnav bg-pink-200 fixed w-[300px] top-0 h-screen  shadow-2xl lg:hidden transition-all duration-300 z-20">
+  <!--nav trigger-->
+  <div (click)="toogleBtn=!toogleBtn"
+       class="mnav__close-btn bg-primary w-8 h-8 relative -right-full top-8 flex justify-center items-center rounded-tr-lg rounded-br-lg cursor-pointer transition-all">
+    <i [ngClass]="!toogleBtn?'ri-arrow-right-s-line':'ri-arrow-left-s-line'"
+       class="mnav__close-btn-icon text-2xl text-white"></i>
+  </div>
+  <!--logo, list item-->
+  <div class="px-12 flex flex-col gap-y-12 h-full">
+    <!--logo-->
+    <a routerLink="">
+      <img src="./assets/img/header/logo.svg" alt="">
+    </a>
+    <!--lista-->
+    <ul class="flex flex-col gap-y-5">
+      @for (item of listaRutas; track $index) {
+        <li>
+          <a
+            class="text-secondary hover:text-accent transition-all hover:cursor-pointer duration-300">{{ item  | titlecase }}</a>
+
+        </li>
+      }
+
+    </ul>
+  </div>
+</nav>
