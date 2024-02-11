@@ -1,0 +1,52 @@
+<section class="appointment section">
+  <div class="container mx-auto">
+    <!-- tittle-->
+    <h2 class="appointment__title h2 mb-5 xl:mb-[50px] text-center xl:text-left">
+      Book Appointment or call:
+      <span class="text-accent-tertiary"><a href="tel:+9999999999">(+999) 999 9999</a></span>
+    </h2>
+    <!--    form-->
+    <form class="appointment__form flex flex-col gap-y-5">
+      <!--      select wrapper-->
+      <div class="flex flex-col xl:flex-row gap-5">
+        <div class="select relative flex items-center">
+          <!--icons-->
+          <div class="absolute right-4">
+            <i class="ri-arrow-down-s-line text-[26px] text-primary"></i>
+          </div>
+          <select class="appearance-none outline-none h-full w-full bg-transparent px-4">
+            <option value="1">Select departament</option>
+            <option value="2">Departament 1</option>
+            <option value="3">Departament 2</option>
+            <option value="4">Departament 3</option>
+
+          </select>
+        </div>
+        <div class="select relative flex items-center">
+          <!--icons-->
+          <div class="absolute right-4">
+            <i class="ri-arrow-down-s-line text-[26px] text-primary"></i>
+          </div>
+          <select class="appearance-none outline-none h-full w-full bg-transparent px-4">
+            <option value="1">Select doctor</option>
+            <option value="2">Dr. Jane Doe</option>
+            <option value="3">Dr. Jhon Doe 2</option>
+            <option value="4">Dr. Bob Smith 3</option>
+
+          </select>
+        </div>
+      </div>
+      <!--input wrapper-->
+      <div class="flex flex-col xl:flex-row gap-5">
+        <input type="text" class="input" placeholder="Full name">
+        <input type="tel" class="input" placeholder="Phone number">
+      </div>
+      <!--input wrapper-->
+      <div class="flex flex-col xl:flex-row gap-5">
+        <input type="date" class="input" >
+        <input type="time" class="input" >
+      </div>
+      <button class="btn btn-lg btn-accent self-start">Book an appointment</button>
+    </form>
+  </div>
+</section>
