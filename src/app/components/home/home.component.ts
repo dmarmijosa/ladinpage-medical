@@ -3,6 +3,7 @@ import {HeroComponent} from '../hero/hero.component';
 import {StatsComponent} from '../stats/stats.component';
 import {ServicesComponent} from '../services/services.component';
 import {AppointmentComponent} from '../appointment/appointment.component';
+import {TestimonialsComponent} from '../testimonials/testimonials.component';
 
 @Component({
   selector: 'app-home',
@@ -11,7 +12,8 @@ import {AppointmentComponent} from '../appointment/appointment.component';
     HeroComponent,
     StatsComponent,
     ServicesComponent,
-    AppointmentComponent
+    AppointmentComponent,
+    TestimonialsComponent
   ],
   templateUrl: './home.component.html',
   styles: ``
