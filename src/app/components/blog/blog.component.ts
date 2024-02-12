@@ -1,9 +1,12 @@
 import { Component } from '@angular/core';
+import {BrandsComponent} from '../../../shared/components/brands/brands.component';
 
 @Component({
   selector: 'app-blog',
   standalone: true,
-  imports: [],
+  imports: [
+    BrandsComponent
+  ],
   templateUrl: './blog.component.html',
   styles: ``
 })
