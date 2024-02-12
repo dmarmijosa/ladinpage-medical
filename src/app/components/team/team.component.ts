@@ -4,21 +4,22 @@ import {Navigation, Pagination} from 'swiper/modules';
 import 'swiper/css';
 
 @Component({
-  selector: 'app-testimonials',
+  selector: 'app-team',
   standalone: true,
   imports: [],
-  templateUrl: './testimonials.component.html',
+  templateUrl: './team.component.html',
   styles: ``
 })
-export class TestimonialsComponent implements AfterViewInit {
+export class TeamComponent implements AfterViewInit{
   ngAfterViewInit(): void {
-    const uno = new Swiper('.swiper', {
+    const team = new Swiper('.swiper1',{
       loop: true,
       pagination: {
-        el: '.swiper-pagination',
+        el: '.swiper-pagination1',
       },
       modules: [Navigation, Pagination]
-    })
+    });
+
   }
 
 }
