@@ -43,7 +43,16 @@
       </div>
       <!--input wrapper-->
       <div class="flex flex-col xl:flex-row gap-5">
-        <input type="date" class="input" >
+          <input
+            class="input"
+            placeholder="yyyy-mm-dd"
+            name="dp"
+            readonly
+            ngbDatepicker
+            #d="ngbDatepicker"
+            (click)="d.toggle()"
+          />
+<!--        <input type="date" class="input" >-->
         <input type="time" class="input" >
       </div>
       <button class="btn btn-lg btn-accent self-start">Book an appointment</button>
