@@ -7,6 +7,7 @@ import {TestimonialsComponent} from '../testimonials/testimonials.component';
 import {TeamComponent} from '../team/team.component';
 import {FaqsComponent} from '../faqs/faqs.component';
 import {DepartamentsComponent} from '../departaments/departaments.component';
+import {BlogComponent} from '../blog/blog.component';
 
 @Component({
   selector: 'app-home',
@@ -19,7 +20,8 @@ import {DepartamentsComponent} from '../departaments/departaments.component';
     TestimonialsComponent,
     TeamComponent,
     FaqsComponent,
-    DepartamentsComponent
+    DepartamentsComponent,
+    BlogComponent
   ],
   templateUrl: './home.component.html',
   styles: ``
