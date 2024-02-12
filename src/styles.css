@@ -75,7 +75,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 ngb-datepicker.dropdown-menu.show {
-  @apply bg-white border-[1px] border-solid border-secondary
+  @apply bg-white border-[1px] border-solid border-secondary;
 }
 
 
@@ -87,7 +87,12 @@ ngb-datepicker.dropdown-menu.show {
   @apply after:bg-quoteRight after:bg-contain after:bg-bottom after:inline-block after:top-0 after:w-10 after:h-10 after:bg-no-repeat
 }
 
-.swiper-slide{
+.swiper-slide {
   @apply hover:cursor-pointer
 }
 
+.bg-departaments-style {
+  @apply bg-cover xl:bg-auto bg-center
+  bg-no-repeat max-w-[1466px] mx-4 xl:mx-auto rounded-[20px] px-6 xl:px-0 py-12
+  xl:pt-[80px] xl:pb-[90px] relative min-h-[588px] flex items-center;
+}
