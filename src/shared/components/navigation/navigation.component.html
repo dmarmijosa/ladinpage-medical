@@ -18,7 +18,7 @@
       @for (item of listaRutas; track $index) {
         <li>
           <a
-            class="text-secondary hover:text-accent transition-all hover:cursor-pointer duration-300">{{ item  | titlecase }}</a>
+            class="text-secondary hover:text-accent transition-all hover:cursor-pointer duration-300" [href]="item.ruta">{{ item.title  | titlecase }}</a>
         </li>
       }
     </ul>
@@ -42,7 +42,7 @@ rounded-[10px] hidden lg:flex lg:items-center lg:justify-between">
     @for (item of listaRutas; track $index) {
       <li>
         <a
-          class="border-r pr-4 text-secondary hover:text-accent transition-all hover:cursor-pointer duration-300">{{ item  | titlecase }}</a>
+          class="border-r pr-4 text-secondary hover:text-accent transition-all hover:cursor-pointer duration-300" [href]="item.ruta">{{ item.title  | titlecase }}</a>
       </li>
     }
   </ul>

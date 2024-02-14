@@ -2,6 +2,7 @@ import {AfterViewInit, Component} from '@angular/core';
 import Swiper from 'swiper';
 import {Navigation, Pagination} from 'swiper/modules';
 import 'swiper/css';
+import ScrollReveal from 'scrollreveal';
 
 @Component({
   selector: 'app-testimonials',
@@ -18,7 +19,15 @@ export class TestimonialsComponent implements AfterViewInit {
         el: '.swiper-pagination',
       },
       modules: [Navigation, Pagination]
-    })
-  }
+    });
 
+    const sr = ScrollReveal({
+      origin: 'bottom',
+      distance: '60px',
+      duration: 900,
+      delay: 600
+    });
+    sr.reveal('.testimonial');
+    sr.reveal('.testimonial__container');
+  }
 }

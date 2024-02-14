@@ -1,4 +1,5 @@
 import {AfterViewInit, Component} from '@angular/core';
+import ScrollReveal from 'scrollreveal';
 
 @Component({
   selector: 'app-faqs',
@@ -20,6 +21,22 @@ export class FaqsComponent implements AfterViewInit{
         // @ts-ignore
         iconElement.classList = `${iconClass} text-2xl`
       })
-    })
+    });
+
+    const sr = ScrollReveal({
+      origin: 'bottom',
+      distance: '60px',
+      duration: 900,
+      delay: 600
+    });
+
+    sr.reveal('.faq__title');
+    sr.reveal('.faq__item',{
+      delay:600,
+      distance:'100px',
+      interval:100,
+      origin:'bottom'
+    });
+
   }
 }

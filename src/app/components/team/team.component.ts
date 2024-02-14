@@ -2,6 +2,7 @@ import {AfterViewInit, Component} from '@angular/core';
 import Swiper from 'swiper';
 import {Navigation, Pagination} from 'swiper/modules';
 import 'swiper/css';
+import ScrollReveal from 'scrollreveal';
 
 @Component({
   selector: 'app-team',
@@ -19,6 +20,16 @@ export class TeamComponent implements AfterViewInit{
       },
       modules: [Navigation, Pagination]
     });
+
+    const sr = ScrollReveal({
+      origin: 'bottom',
+      distance: '60px',
+      duration: 900,
+      delay: 600
+    });
+
+    sr.reveal('.team__title');
+    sr.reveal('.team__slider');
 
   }
 

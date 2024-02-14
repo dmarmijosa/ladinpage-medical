@@ -18,6 +18,6 @@ import {RouterLink} from '@angular/router';
 
 export class NavigationComponent {
   toogleBtn: boolean = false;
-  listaRutas=["home","doctors","departament","services","blog","contact"]
+  listaRutas=[{title:'home',ruta:'/'}, {title:'doctors',ruta:'#doctors'}, {title:'departament',ruta: '#departaments'}, {title:'services',ruta: '#services'}, {title:'blog', ruta: '#blog'}, {title:'contact',ruta: '#contact'}]
   protected readonly input = input;
 }
